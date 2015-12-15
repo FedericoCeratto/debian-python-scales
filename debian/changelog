@@ -1,0 +1,5 @@
+python-scales (1.0.9-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #810263)
+
+ -- Federico Ceratto <federico@debian.org>  Mon, 14 Dec 2015 01:02:35 +0000

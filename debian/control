@@ -1,0 +1,42 @@
+Source: python-scales
+Section: python
+Priority: optional
+Maintainer: Federico Ceratto <federico@debian.org>
+Build-Depends: debhelper (>= 9~)
+Build-Depends-Indep:
+ dh-python,
+ python-all (>= 2.7),
+ python-nose,
+ python-setuptools (>= 0.6b3),
+ python-tox,
+ python3-all,
+ python3-nose,
+ python3-setuptools,
+Standards-Version: 3.9.6
+Homepage: https://www.github.com/Cue/scales
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.2
+Vcs-Git: git://anonscm.debian.org/collab-maint/python-scales.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/python-scales.git;a=summary
+
+Package: python-scales
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Provides: ${python:Provides}
+Suggests: python-bottle | python-flask
+Description: Application metrics for Python
+ A library to generate metrics for Python. It provides counters, timers,
+ 1/5/15 minute averaged rates, hierarchical metrics.
+ It can send metrics to a log file, to Graphite for graphing or serve them
+ through an HTTP server.
+
+Package: python3-scales
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Suggests: python3-bottle | python3-flask
+Provides: ${python3:Provides}
+Description: Application metrics for Python 3
+ A library to generate metrics for Python 3. It provides counters, timers,
+ 1/5/15 minute averaged rates, hierarchical metrics.
+ It can send metrics to a log file, to Graphite for graphing or serve them
+ through an HTTP server.
