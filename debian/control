@@ -8,10 +8,12 @@ Build-Depends-Indep:
  python-all (>= 2.7),
  python-nose,
  python-setuptools (>= 0.6b3),
+ python-six,
  python-tox,
  python3-all,
  python3-nose,
  python3-setuptools,
+ python3-six,
 Standards-Version: 3.9.6
 Homepage: https://www.github.com/Cue/scales
 X-Python-Version: >= 2.7
